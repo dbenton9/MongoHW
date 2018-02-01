@@ -9,7 +9,7 @@ var exphbs = require("express-handlebars");
 var app = express();
 
 // setting port
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 // setting handlebars as default template
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
